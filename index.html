@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="updates.css?v=24">
+  <link rel="stylesheet" href="updates.css?v=26">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -100,8 +100,10 @@
         <div><p class="eyebrow">Protect your guys</p><h2>2026 Keepers</h2></div>
         <p>Keeper history began in 2025. The repeat cost shows the round each player would cost only if kept again in 2026.</p>
       </div>
-      <div class="table-wrap" role="region" aria-label="2026 keepers" tabindex="0">
-        <table><thead><tr><th>Team</th><th>2025 keeper</th><th>Position</th><th>2025 cost</th><th>2026 repeat cost</th></tr></thead>
+      <details class="keeper-history">
+        <summary><span><b>2025 Keeper History</b><small>12 keepers recorded</small></span><span class="expand-label">View history</span></summary>
+        <div class="table-wrap keeper-table-wrap" role="region" aria-label="2025 keeper history" tabindex="0">
+        <table class="keeper-table"><thead><tr><th>Team</th><th>2025 keeper</th><th>Position</th><th>2025 cost</th><th>2026 repeat cost</th></tr></thead>
         <tbody>
           <tr><td>Bill Brasky</td><td>Brock Bowers</td><td>TE</td><td>Round 10</td><td>Round 9</td></tr>
           <tr><td>Banner 18</td><td>James Cook III</td><td>RB</td><td>Round 4</td><td>Round 3</td></tr>
@@ -116,8 +118,9 @@
           <tr><td>The Reacharounds</td><td>Alvin Kamara</td><td>RB</td><td>Round 4</td><td>Round 3</td></tr>
           <tr><td>Injury Prone</td><td>Malik Nabers</td><td>WR</td><td>Round 4</td><td>Round 3</td></tr>
         </tbody></table>
-      </div>
-      <div class="notice keeper-note"><span>Cost rule</span><p>A player’s first keeper cost matches the prior draft round. If the same player is kept again, the cost moves one round earlier. A projected repeat cost is not a confirmed 2026 selection.</p></div>
+        </div>
+        <div class="notice keeper-note"><span>Cost rule</span><p>A player’s first keeper cost matches the prior draft round. If the same player is kept again, the cost moves one round earlier. A projected repeat cost is not a confirmed 2026 selection.</p></div>
+      </details>
     </section>
 
     <section class="section trades-section" id="trades">
