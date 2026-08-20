@@ -1,5 +1,5 @@
 .date-grid {
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .rules-list details div {
@@ -80,6 +80,72 @@
   justify-content: space-between;
   gap: 2rem;
   margin-bottom: 1.5rem;
+}
+
+.season-standings {
+  padding: 0;
+  border: 1px solid var(--ink);
+  background: var(--white);
+}
+
+.season-standings + .season-standings {
+  margin-top: 1.5rem;
+}
+
+.season-standings .standings-title {
+  margin: 0;
+  padding: 1.5rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.season-standings .standings-title::-webkit-details-marker {
+  display: none;
+}
+
+.season-standings .table-wrap {
+  border-right: 0;
+  border-left: 0;
+}
+
+.season-standings .standings-note {
+  padding: 0 1.5rem 1.5rem;
+}
+
+.expand-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid var(--ink);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.expand-label::after {
+  content: "+";
+  font-size: 1rem;
+}
+
+.season-standings[open] .expand-label::before {
+  content: "Hide ";
+}
+
+.season-standings[open] .expand-label {
+  font-size: 0;
+}
+
+.season-standings[open] .expand-label::before,
+.season-standings[open] .expand-label::after {
+  font-size: 0.68rem;
+}
+
+.season-standings[open] .expand-label::after {
+  content: "−";
+  font-size: 1rem;
 }
 
 .standings-title .eyebrow {

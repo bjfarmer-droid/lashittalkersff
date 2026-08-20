@@ -26,6 +26,5 @@ Open `index.html` in GitHub and select the pencil icon to edit it. Search for th
 - `To be confirmed`
 - `Awaiting submission`
 - `Champion to be added`
-- `YEAR`
 
 Commit each update when finished. GitHub Pages will republish automatically.
