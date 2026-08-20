@@ -1,0 +1,254 @@
+.date-grid {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.rules-list details div {
+  max-width: 900px;
+}
+
+.rules-list details div p {
+  margin: 0.25rem 0 1rem;
+}
+
+.bylaws-download {
+  margin-top: 2rem;
+  background: var(--acid);
+  color: var(--ink);
+}
+
+.standings-block {
+  margin-top: 4rem;
+}
+
+.draft-party-card {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.35fr) 1fr;
+  margin-top: 4rem;
+  border: 1px solid var(--ink);
+  background: var(--white);
+  box-shadow: 12px 12px 0 var(--orange);
+}
+
+.party-label {
+  display: flex;
+  min-height: 340px;
+  padding: 1.5rem;
+  background: var(--ink);
+  color: var(--white);
+  flex-direction: column;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.party-label span {
+  color: var(--acid);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.party-label b {
+  font-family: Anton, sans-serif;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 400;
+  line-height: 0.92;
+}
+
+.party-copy {
+  padding: clamp(2rem, 5vw, 4rem);
+}
+
+.party-copy h3 {
+  margin: 0 0 1.5rem;
+  font-family: Anton, sans-serif;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 400;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.party-copy > p:last-child {
+  max-width: 760px;
+  margin-bottom: 0;
+  color: #555;
+  line-height: 1.7;
+}
+
+.standings-title {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.standings-title .eyebrow {
+  margin: 0;
+}
+
+.standings-title h3 {
+  margin: 0;
+  font-family: Anton, sans-serif;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.standings-table .podium-row td {
+  background: rgba(217, 255, 67, 0.18);
+  font-weight: 700;
+}
+
+.standings-note {
+  max-width: 720px;
+  color: #777;
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.back-link {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-underline-offset: 5px;
+}
+
+.bylaws-main {
+  padding: clamp(4rem, 8vw, 8rem) clamp(1.25rem, 8vw, 8rem);
+}
+
+.bylaws-hero {
+  max-width: 900px;
+  margin-bottom: 6rem;
+}
+
+.bylaws-hero h1 {
+  margin: 0;
+  font-family: Anton, sans-serif;
+  font-size: clamp(5rem, 12vw, 10rem);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 0.88;
+  text-transform: uppercase;
+}
+
+.bylaws-hero h1 em {
+  color: var(--orange);
+  font-style: normal;
+}
+
+.bylaws-hero > p:not(.eyebrow) {
+  margin: 2rem 0;
+  color: #666;
+}
+
+.privacy-note {
+  margin: 2rem 0;
+  padding: 1.25rem;
+  border-left: 5px solid var(--orange);
+  background: #dfdacb;
+  line-height: 1.6;
+}
+
+.bylaws-content {
+  max-width: 920px;
+}
+
+.bylaws-content section {
+  padding: 4rem 0;
+  border-top: 1px solid var(--ink);
+}
+
+.bylaws-content h2 {
+  margin: 0 0 3rem;
+  font-family: Anton, sans-serif;
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  font-weight: 400;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.bylaws-content h3 {
+  margin: 2.5rem 0 0.75rem;
+  font-size: 1.15rem;
+}
+
+.bylaws-content section > p:not(.article-number) {
+  max-width: 780px;
+  color: #4f4c45;
+  line-height: 1.75;
+}
+
+.article-number {
+  color: #c33c1f;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.schedule-list p,
+.vote-list li {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.8fr) 1.2fr;
+  gap: 2rem;
+  margin: 0;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.schedule-list span {
+  color: #555;
+}
+
+.vote-list {
+  padding: 0;
+  list-style: none;
+}
+
+.vote-list b {
+  color: #555;
+}
+
+@media (max-width: 1100px) {
+  .date-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 850px) {
+  .date-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .date-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .standings-title {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .draft-party-card {
+    grid-template-columns: 1fr;
+  }
+
+  .party-label {
+    min-height: 180px;
+  }
+
+  .back-link {
+    font-size: 0.65rem;
+  }
+
+  .schedule-list p,
+  .vote-list li {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+}
