@@ -157,6 +157,56 @@
   background: var(--white);
 }
 
+.current-keepers {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: clamp(2rem, 5vw, 5rem);
+  margin-bottom: 1.5rem;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  color: var(--white);
+}
+
+.current-keepers h3 {
+  margin: 0;
+  font-family: Anton, sans-serif;
+  font-size: clamp(2.2rem, 4vw, 3.8rem);
+  font-weight: 400;
+  line-height: 0.98;
+  text-transform: uppercase;
+}
+
+.current-keepers .eyebrow,
+.keeper-lock-status span {
+  color: var(--acid);
+}
+
+.keeper-lock-status {
+  padding: 1.25rem;
+  border: 1px solid rgba(217, 255, 67, 0.55);
+}
+
+.keeper-lock-status span {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.keeper-lock-status b {
+  display: block;
+  margin: 0.4rem 0 0.7rem;
+}
+
+.keeper-lock-status p {
+  margin: 0;
+  color: #bbb;
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
 .keeper-history > summary {
   display: flex;
   align-items: center;
@@ -301,6 +351,13 @@
   font-size: 0.9rem;
 }
 
+.commissioner-desk li a,
+.lottery-status a {
+  color: #b7371c;
+  font-weight: 700;
+  text-underline-offset: 3px;
+}
+
 .draft-order-section {
   background: #0b0d0f;
   color: var(--white);
@@ -339,6 +396,15 @@
 .lottery-status p {
   margin: 0;
   font-size: 0.76rem;
+}
+
+.lottery-status a {
+  display: inline-block;
+  margin-top: 0.75rem;
+  color: #d5a84d;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .draft-order-intro {
@@ -773,6 +839,10 @@
   .keeper-table td:nth-child(5)::before { content: "Repeat cost"; }
 
   .commissioner-desk {
+    grid-template-columns: 1fr;
+  }
+
+  .current-keepers {
     grid-template-columns: 1fr;
   }
 
