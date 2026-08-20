@@ -1,0 +1,35 @@
+.date-grid {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.rules-list details div {
+  max-width: 900px;
+}
+
+.rules-list details div p {
+  margin: 0.25rem 0 1rem;
+}
+
+.bylaws-download {
+  margin-top: 2rem;
+  background: var(--acid);
+  color: var(--ink);
+}
+
+@media (max-width: 1100px) {
+  .date-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 850px) {
+  .date-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .date-grid {
+    grid-template-columns: 1fr;
+  }
+}
