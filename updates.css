@@ -27,6 +27,18 @@
   object-fit: cover;
 }
 
+.ticker .ticker-track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+
+.ticker-sequence {
+  display: block;
+  flex: none;
+  padding-right: 1.5rem;
+}
+
 .hero-side {
   position: relative;
   display: grid;
