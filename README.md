@@ -7,13 +7,12 @@ This folder is ready to publish with GitHub Pages. It includes:
 - `updates.css` — 2026 schedule and bylaws layout updates
 - `script.js` — the mobile menu
 - `CNAME` — connects the site to `lashittalkersff.com`
-- `2026-league-bylaws-v8.docx` — the complete official bylaws download
 
 ## Publish on GitHub Pages
 
 1. Open the GitHub repository already connected to Pages.
 2. Select **Add file → Upload files**.
-3. Upload all seven files in this folder. Upload the files themselves, not the containing folder.
+3. Upload all six files in this folder. Upload the files themselves, not the containing folder.
 4. Add a commit message such as `Add league website`, then select **Commit changes**.
 5. Open **Settings → Pages**. Confirm the site is publishing from the `main` branch and the `/ (root)` folder.
 6. After the deployment finishes, enter `lashittalkersff.com` under **Custom domain** if it is not already shown, then save.
