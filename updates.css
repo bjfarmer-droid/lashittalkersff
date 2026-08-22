@@ -263,6 +263,16 @@
   font-size: 0.84rem;
 }
 
+.current-keeper-table-wrap {
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--ink);
+}
+
+.current-keeper-table .no-keeper-row td {
+  background: #e2ded2;
+  color: #5f5a50;
+}
+
 .keeper-history .keeper-note {
   margin: 0;
   border-top: 1px solid var(--ink);
@@ -843,6 +853,14 @@
   .keeper-table td:nth-child(3)::before { content: "Position"; }
   .keeper-table td:nth-child(4)::before { content: "2025 cost"; }
   .keeper-table td:nth-child(5)::before { content: "Repeat cost"; }
+
+  .current-keeper-table tr {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .current-keeper-table td:nth-child(2)::before { content: "2026 keeper"; }
+  .current-keeper-table td:nth-child(3)::before { content: "2026 cost"; }
+  .current-keeper-table td:nth-child(4)::before { content: "Keeper status"; }
 
   .commissioner-desk {
     grid-template-columns: 1fr;
