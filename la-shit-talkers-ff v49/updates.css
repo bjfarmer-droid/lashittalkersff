@@ -1,0 +1,1127 @@
+.date-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.hero-update {
+  display: grid;
+  max-width: 570px;
+  margin: 0 0 1.6rem;
+  padding: 0.9rem 1rem;
+  border-left: 5px solid var(--acid);
+  background: var(--ink);
+  color: var(--white);
+  text-decoration: none;
+  box-shadow: 6px 6px 0 rgba(255, 99, 56, 0.9);
+}
+
+.hero-update span {
+  color: var(--acid);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.hero-update strong {
+  margin-top: 0.22rem;
+  font-size: 1rem;
+}
+
+.hero-update small {
+  margin-top: 0.2rem;
+  color: #c9c4b9;
+  font-size: 0.72rem;
+}
+
+.hero-update:hover,
+.hero-update:focus-visible {
+  transform: translate(2px, 2px);
+  box-shadow: 4px 4px 0 rgba(255, 99, 56, 0.9);
+}
+
+.rules-list details div {
+  max-width: 900px;
+}
+
+.rules-list details div p {
+  margin: 0.25rem 0 1rem;
+}
+
+.bylaws-download {
+  margin-top: 2rem;
+  background: var(--acid);
+  color: var(--ink);
+}
+
+.yahoo-settings-note {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border: 1px solid #444;
+}
+
+.yahoo-settings-note .eyebrow {
+  margin-bottom: 0.5rem;
+}
+
+.yahoo-settings-note h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.yahoo-settings-note p:last-child {
+  max-width: 650px;
+  margin: 0.65rem 0 0;
+  color: #bbb;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.yahoo-settings-link {
+  flex: 0 0 auto;
+  border: 1px solid var(--acid);
+  color: var(--acid);
+}
+
+.yahoo-settings-link:hover,
+.yahoo-settings-link:focus-visible {
+  background: var(--acid);
+  color: var(--ink);
+}
+
+@media (max-width: 720px) {
+  .yahoo-settings-note {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+.standings-block {
+  margin-top: 4rem;
+}
+
+.brand-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.ticker .ticker-track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+
+.ticker-sequence {
+  display: block;
+  flex: none;
+  padding-right: 1.5rem;
+}
+
+.hero-side {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  gap: 1.5rem;
+}
+
+.hero-crest {
+  width: min(100%, 390px);
+  filter: drop-shadow(0 16px 24px rgba(18, 17, 15, 0.22));
+}
+
+.hero-side .hero-card {
+  width: min(100%, 390px);
+}
+
+.league-banner {
+  padding: clamp(1.25rem, 3vw, 3rem);
+  background: #090b0c;
+}
+
+.league-banner img {
+  display: block;
+  width: 100%;
+  max-width: 1490px;
+  margin: 0 auto;
+  border-radius: 14px;
+}
+
+.branded-bylaws-hero {
+  display: grid;
+  max-width: 1100px;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 0.55fr);
+  align-items: center;
+  gap: clamp(2rem, 6vw, 6rem);
+}
+
+.branded-bylaws-hero > img {
+  width: 100%;
+  max-width: 390px;
+  justify-self: end;
+  box-shadow: 10px 10px 0 var(--orange);
+}
+
+.champion-logo {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  margin: auto;
+  border: 1px solid rgba(18, 17, 15, 0.3);
+  object-fit: contain;
+}
+
+.trophy-grid .featured {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #bf9139;
+  background: #0b0d0f;
+  color: #f4ead2;
+  box-shadow: inset 0 0 60px rgba(191, 145, 57, 0.12);
+}
+
+.trophy-grid .featured::before {
+  position: absolute;
+  inset: 12px;
+  border: 1px solid rgba(191, 145, 57, 0.45);
+  content: "";
+  pointer-events: none;
+}
+
+.trophy-grid .featured > span {
+  position: relative;
+  color: #d5a84d;
+}
+
+.trophy-grid .featured .champion-logo {
+  position: relative;
+  border: 0;
+  filter: drop-shadow(0 0 24px rgba(213, 168, 77, 0.2));
+}
+
+.trophy-grid .featured h3,
+.trophy-grid .featured p,
+.champion-years {
+  position: relative;
+}
+
+.trophy-grid .featured p {
+  color: #d5a84d;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.champion-years {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.champion-years span {
+  padding: 0.65rem 0.5rem;
+  border: 1px solid #bf9139;
+  color: #f4ead2;
+  font-family: Anton, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+
+.keeper-history {
+  border: 1px solid var(--ink);
+  background: var(--white);
+}
+
+.current-keepers {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: clamp(2rem, 5vw, 5rem);
+  margin-bottom: 1.5rem;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  color: var(--white);
+}
+
+.current-keepers h3 {
+  margin: 0;
+  font-family: Anton, sans-serif;
+  font-size: clamp(2.2rem, 4vw, 3.8rem);
+  font-weight: 400;
+  line-height: 0.98;
+  text-transform: uppercase;
+}
+
+.current-keepers .eyebrow,
+.keeper-lock-status span {
+  color: var(--acid);
+}
+
+.keeper-lock-status {
+  padding: 1.25rem;
+  border: 1px solid rgba(217, 255, 67, 0.55);
+}
+
+.keeper-lock-status span {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.keeper-lock-status b {
+  display: block;
+  margin: 0.4rem 0 0.7rem;
+}
+
+.keeper-lock-status p {
+  margin: 0;
+  color: #bbb;
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+.keeper-history > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.keeper-history > summary::-webkit-details-marker {
+  display: none;
+}
+
+.keeper-history > summary > span:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.keeper-history > summary b {
+  font-size: 1.1rem;
+}
+
+.keeper-history > summary small {
+  color: #777;
+}
+
+.keeper-history[open] .expand-label {
+  font-size: 0;
+}
+
+.keeper-history[open] .expand-label::before {
+  content: "Hide ";
+  font-size: 0.68rem;
+}
+
+.keeper-history[open] .expand-label::after {
+  content: "−";
+  font-size: 1rem;
+}
+
+.keeper-table-wrap {
+  border-right: 0;
+  border-left: 0;
+}
+
+.keeper-table th,
+.keeper-table td {
+  padding: 0.72rem 0.85rem;
+}
+
+.keeper-table td {
+  font-size: 0.84rem;
+}
+
+.keeper-table td small {
+  color: #777;
+  font-size: 0.72rem;
+  white-space: nowrap;
+}
+
+
+.current-keeper-table-wrap {
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--ink);
+}
+
+.current-keeper-table .no-keeper-row td {
+  background: #e2ded2;
+  color: #5f5a50;
+}
+
+.keeper-history .keeper-note {
+  margin: 0;
+  border-top: 1px solid var(--ink);
+}
+
+.draft-party-card {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.35fr) 1fr;
+  margin-top: 4rem;
+  border: 1px solid var(--ink);
+  background: var(--white);
+  box-shadow: 12px 12px 0 var(--orange);
+}
+
+.calendar-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #b7371c;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  text-underline-offset: 4px;
+}
+
+.calendar-live-link {
+  align-self: flex-start;
+  margin-top: 0.8rem;
+  color: #b7371c;
+}
+
+.calendar-complete {
+  align-self: flex-start;
+  margin-top: 0.8rem;
+  color: var(--acid);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.date-grid article.date-complete {
+  background: #252521;
+  color: var(--white);
+}
+
+.date-grid article.date-complete .card-number,
+.date-grid article.date-complete .label {
+  color: var(--acid);
+}
+
+.date-grid article.date-complete > p:not(.label) {
+  color: #ccc7bb;
+}
+
+.date-grid article > p:not(.label) {
+  color: #666;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.commissioner-desk {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: clamp(2rem, 5vw, 5rem);
+  margin-top: 4rem;
+  padding: clamp(2rem, 4vw, 3rem);
+  border: 1px solid var(--ink);
+  background: var(--white);
+}
+
+.commissioner-desk h3,
+.record-book-heading h3 {
+  margin: 0;
+  font-family: Anton, sans-serif;
+  font-size: clamp(2.4rem, 4vw, 4rem);
+  font-weight: 400;
+  line-height: 0.98;
+  text-transform: uppercase;
+}
+
+.commissioner-desk ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.commissioner-desk li {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 0.75rem;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.commissioner-desk li:last-child {
+  border-bottom: 0;
+}
+
+.commissioner-desk li > span {
+  color: var(--orange);
+  font-family: Anton, sans-serif;
+  font-size: 1.3rem;
+}
+
+.commissioner-desk li p {
+  margin: 0;
+  color: #666;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.commissioner-desk li b {
+  display: block;
+  color: var(--ink);
+  font-size: 0.9rem;
+}
+
+.commissioner-desk li a,
+.lottery-status a {
+  color: #b7371c;
+  font-weight: 700;
+  text-underline-offset: 3px;
+}
+
+.draft-order-section {
+  background: #0b0d0f;
+  color: var(--white);
+}
+
+.draft-order-section .eyebrow {
+  color: #d5a84d;
+}
+
+.lottery-status {
+  padding: 1.25rem;
+  border: 1px solid #bf9139;
+}
+
+.lottery-status span {
+  display: block;
+  color: #d5a84d;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.lottery-status b {
+  display: block;
+  margin: 0.4rem 0;
+  font-size: 1.1rem;
+}
+
+.lottery-status p,
+.draft-order-intro {
+  color: #aaa;
+  line-height: 1.6;
+}
+
+.lottery-status p {
+  margin: 0;
+  font-size: 0.76rem;
+}
+
+.lottery-status a {
+  display: inline-block;
+  margin-top: 0.75rem;
+  color: #d5a84d;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.draft-order-intro {
+  max-width: 760px;
+  margin: -2rem 0 2.5rem;
+}
+
+.powerball-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid #444;
+  border-left: 1px solid #444;
+}
+
+.powerball-grid article {
+  min-height: 140px;
+  padding: 1.25rem;
+  border-right: 1px solid #444;
+  border-bottom: 1px solid #444;
+}
+
+.powerball-grid span {
+  color: #d5a84d;
+  font-family: Anton, sans-serif;
+  font-size: 2.2rem;
+}
+
+.powerball-grid h3 {
+  margin: 1.5rem 0 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.record-book {
+  margin-top: 4rem;
+  padding: clamp(2rem, 4vw, 3rem);
+  border: 1px solid var(--ink);
+  background: var(--paper);
+}
+
+.record-book-heading {
+  margin-bottom: 2rem;
+}
+
+.record-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--ink);
+  border-left: 1px solid var(--ink);
+}
+
+.record-grid article {
+  padding: 1.25rem;
+  border-right: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+}
+
+.record-grid span {
+  display: block;
+  min-height: 32px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.record-grid strong {
+  display: block;
+  margin: 1.5rem 0;
+  color: var(--orange);
+  font-family: Anton, sans-serif;
+  font-size: clamp(2.2rem, 4vw, 4rem);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.record-grid h4 {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.record-grid p {
+  margin: 0.25rem 0 0;
+  color: #777;
+  font-size: 0.72rem;
+}
+
+#draft-party {
+  scroll-margin-top: 100px;
+}
+
+.party-label {
+  display: flex;
+  min-height: 340px;
+  padding: 1.5rem;
+  background: var(--ink);
+  color: var(--white);
+  flex-direction: column;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.party-label span {
+  color: var(--acid);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.party-label b {
+  font-family: Anton, sans-serif;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 400;
+  line-height: 0.92;
+}
+
+.party-copy {
+  padding: clamp(2rem, 5vw, 4rem);
+}
+
+.party-copy h3 {
+  margin: 0 0 1.5rem;
+  font-family: Anton, sans-serif;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 400;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.party-copy > p:last-child {
+  max-width: 760px;
+  margin-bottom: 0;
+  color: #555;
+  line-height: 1.7;
+}
+
+.standings-title {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.season-standings {
+  padding: 0;
+  border: 1px solid var(--ink);
+  background: var(--white);
+}
+
+.season-standings + .season-standings {
+  margin-top: 1.5rem;
+}
+
+.season-standings .standings-title {
+  margin: 0;
+  padding: 1.5rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.season-standings .standings-title::-webkit-details-marker {
+  display: none;
+}
+
+.season-standings .table-wrap {
+  border-right: 0;
+  border-left: 0;
+}
+
+.season-standings .standings-note {
+  padding: 0 1.5rem 1.5rem;
+}
+
+.expand-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid var(--ink);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.expand-label::after {
+  content: "+";
+  font-size: 1rem;
+}
+
+.season-standings[open] .expand-label::before {
+  content: "Hide ";
+}
+
+.season-standings[open] .expand-label {
+  font-size: 0;
+}
+
+.season-standings[open] .expand-label::before,
+.season-standings[open] .expand-label::after {
+  font-size: 0.68rem;
+}
+
+.season-standings[open] .expand-label::after {
+  content: "−";
+  font-size: 1rem;
+}
+
+.standings-title .eyebrow {
+  margin: 0;
+}
+
+.standings-title h3 {
+  margin: 0;
+  font-family: Anton, sans-serif;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.standings-table .podium-row td {
+  background: rgba(217, 255, 67, 0.18);
+  font-weight: 700;
+}
+
+.standings-note {
+  max-width: 720px;
+  color: #777;
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.back-link {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-underline-offset: 5px;
+}
+
+.bylaws-main {
+  padding: clamp(4rem, 8vw, 8rem) clamp(1.25rem, 8vw, 8rem);
+}
+
+.bylaws-hero {
+  max-width: 900px;
+  margin-bottom: 6rem;
+}
+
+.bylaws-hero h1 {
+  margin: 0;
+  font-family: Anton, sans-serif;
+  font-size: clamp(5rem, 12vw, 10rem);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 0.88;
+  text-transform: uppercase;
+}
+
+.bylaws-hero h1 em {
+  color: var(--orange);
+  font-style: normal;
+}
+
+.bylaws-hero > p:not(.eyebrow) {
+  margin: 2rem 0;
+  color: #666;
+}
+
+.privacy-note {
+  margin: 2rem 0;
+  padding: 1.25rem;
+  border-left: 5px solid var(--orange);
+  background: #dfdacb;
+  line-height: 1.6;
+}
+
+.bylaws-content {
+  max-width: 920px;
+}
+
+.bylaws-content section {
+  padding: 4rem 0;
+  border-top: 1px solid var(--ink);
+}
+
+.bylaws-content h2 {
+  margin: 0 0 3rem;
+  font-family: Anton, sans-serif;
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  font-weight: 400;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.bylaws-content h3 {
+  margin: 2.5rem 0 0.75rem;
+  font-size: 1.15rem;
+}
+
+.bylaws-content section > p:not(.article-number) {
+  max-width: 780px;
+  color: #4f4c45;
+  line-height: 1.75;
+}
+
+.article-number {
+  color: #c33c1f;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.schedule-list p,
+.vote-list li {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.8fr) 1.2fr;
+  gap: 2rem;
+  margin: 0;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.schedule-list span {
+  color: #555;
+}
+
+.vote-list {
+  padding: 0;
+  list-style: none;
+}
+
+.vote-list b {
+  color: #555;
+}
+
+@media (max-width: 1100px) {
+  .date-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .powerball-grid,
+  .record-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 850px) {
+  .date-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  .branded-bylaws-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .branded-bylaws-hero > img {
+    max-width: 300px;
+    justify-self: start;
+  }
+
+  .keeper-table-wrap {
+    overflow: visible;
+    border-bottom: 0;
+  }
+
+  .keeper-table {
+    min-width: 0;
+  }
+
+  .keeper-table thead {
+    display: none;
+  }
+
+  .keeper-table tbody,
+  .keeper-table tr,
+  .keeper-table td {
+    display: block;
+  }
+
+  .keeper-table tr {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0.8rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .keeper-table tr:last-child {
+    border-bottom: 0;
+  }
+
+  .keeper-table td {
+    padding: 0.3rem 0.45rem;
+    border: 0;
+  }
+
+  .keeper-table td:nth-child(1),
+  .keeper-table td:nth-child(2) {
+    grid-column: 1 / -1;
+  }
+
+  .keeper-table td:nth-child(1) {
+    font-weight: 700;
+  }
+
+  .keeper-table td:nth-child(2) {
+    margin-bottom: 0.3rem;
+    color: #b7371c;
+    font-size: 1rem;
+  }
+
+  .keeper-table td::before {
+    display: block;
+    margin-bottom: 0.12rem;
+    color: #777;
+    font-size: 0.56rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .keeper-table td:nth-child(1)::before { content: "Team"; }
+  .keeper-table td:nth-child(2)::before { content: "2025 keeper"; }
+  .keeper-table td:nth-child(3)::before { content: "Position"; }
+  .keeper-table td:nth-child(4)::before { content: "2025 cost"; }
+  .keeper-table td:nth-child(5)::before { content: "Repeat cost"; }
+
+  .current-keeper-table tr {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .current-keeper-table td:nth-child(2)::before { content: "2026 keeper"; }
+  .current-keeper-table td:nth-child(3)::before { content: "2026 cost"; }
+  .current-keeper-table td:nth-child(4)::before { content: "Keeper status"; }
+
+  .commissioner-desk {
+    grid-template-columns: 1fr;
+  }
+
+  .current-keepers {
+    grid-template-columns: 1fr;
+  }
+
+  .powerball-grid,
+  .record-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .season-standings .table-wrap {
+    overflow: visible;
+  }
+
+  .standings-table {
+    min-width: 0;
+  }
+
+  .standings-table thead {
+    display: none;
+  }
+
+  .standings-table tbody,
+  .standings-table tr,
+  .standings-table td {
+    display: block;
+  }
+
+  .standings-table tr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0.8rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .standings-table tr:last-child {
+    border-bottom: 0;
+  }
+
+  .standings-table td {
+    padding: 0.35rem 0.45rem;
+    border: 0;
+    font-size: 0.84rem;
+  }
+
+  .standings-table td:nth-child(2) {
+    grid-row: 1;
+    grid-column: 1 / -1;
+    color: #b7371c;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .standings-table td:nth-child(1) { grid-row: 2; grid-column: 1; }
+  .standings-table td:nth-child(3) { grid-row: 2; grid-column: 2; }
+  .standings-table td:nth-child(4) { grid-row: 3; grid-column: 1; }
+  .standings-table td:nth-child(5) { grid-row: 3; grid-column: 2; }
+
+  .standings-table td::before {
+    display: block;
+    margin-bottom: 0.12rem;
+    color: #777;
+    font-size: 0.56rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .standings-table td:nth-child(1)::before { content: "Rank"; }
+  .standings-table td:nth-child(2)::before { content: "Team"; }
+  .standings-table td:nth-child(3)::before { content: "Record"; }
+  .standings-table td:nth-child(4)::before { content: "Points for"; }
+  .standings-table td:nth-child(5)::before { content: "Points against"; }
+}
+
+@media (max-width: 520px) {
+  .date-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .standings-title {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .draft-party-card {
+    grid-template-columns: 1fr;
+  }
+
+  .party-label {
+    min-height: 180px;
+  }
+
+  .back-link {
+    font-size: 0.65rem;
+  }
+
+  .schedule-list p,
+  .vote-list li {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+
+  .hero-crest {
+    max-width: 260px;
+  }
+
+  .league-banner img {
+    height: 110px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .keeper-history > summary {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .powerball-grid article {
+    min-height: 120px;
+    padding: 1rem;
+  }
+
+  .powerball-grid h3 {
+    margin-top: 1rem;
+    font-size: 0.78rem;
+  }
+
+  .record-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .record-grid span {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .bylaws-page .brand > span {
+    display: none;
+  }
+
+  .bylaws-page .back-link {
+    font-size: 0.6rem;
+  }
+}
