@@ -16,6 +16,52 @@
   color: var(--ink);
 }
 
+.yahoo-settings-note {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border: 1px solid #444;
+}
+
+.yahoo-settings-note .eyebrow {
+  margin-bottom: 0.5rem;
+}
+
+.yahoo-settings-note h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.yahoo-settings-note p:last-child {
+  max-width: 650px;
+  margin: 0.65rem 0 0;
+  color: #bbb;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.yahoo-settings-link {
+  flex: 0 0 auto;
+  border: 1px solid var(--acid);
+  color: var(--acid);
+}
+
+.yahoo-settings-link:hover,
+.yahoo-settings-link:focus-visible {
+  background: var(--acid);
+  color: var(--ink);
+}
+
+@media (max-width: 720px) {
+  .yahoo-settings-note {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
 .standings-block {
   margin-top: 4rem;
 }
@@ -263,6 +309,13 @@
   font-size: 0.84rem;
 }
 
+.keeper-table td small {
+  color: #777;
+  font-size: 0.72rem;
+  white-space: nowrap;
+}
+
+
 .current-keeper-table-wrap {
   margin-bottom: 1.5rem;
   border: 1px solid var(--ink);
@@ -302,6 +355,16 @@
   align-self: flex-start;
   margin-top: 0.8rem;
   color: #b7371c;
+}
+
+.calendar-complete {
+  align-self: flex-start;
+  margin-top: 0.8rem;
+  color: #6f7900;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
 }
 
 .date-grid article > p:not(.label) {
