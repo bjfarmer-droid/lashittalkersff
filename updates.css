@@ -1125,3 +1125,174 @@
     font-size: 0.6rem;
   }
 }
+
+.trade-ledger-note {
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 1.1rem 1.25rem;
+  background: var(--ink);
+  color: var(--white);
+}
+
+.trade-ledger-note span {
+  flex: 0 0 auto;
+  color: var(--acid);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.trade-ledger-note p {
+  max-width: 760px;
+  margin: 0;
+  font-size: 0.86rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 620px) {
+  .trade-ledger-note {
+    flex-direction: column;
+    gap: 0.45rem;
+  }
+}
+
+.lottery-complete {
+  border-color: #d5a84d;
+  background: rgba(213, 168, 77, 0.08);
+}
+
+.final-draft-order {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 2rem;
+  border-top: 1px solid #444;
+  border-left: 1px solid #444;
+}
+
+.final-draft-order article {
+  display: grid;
+  grid-template-columns: 54px 1fr;
+  align-items: center;
+  min-height: 86px;
+  padding: 1rem;
+  border-right: 1px solid #444;
+  border-bottom: 1px solid #444;
+}
+
+.final-draft-order span {
+  color: #d5a84d;
+  font-family: Anton, sans-serif;
+  font-size: 1.8rem;
+}
+
+.final-draft-order h3 {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.35;
+}
+
+.lottery-breakdown {
+  border: 1px solid #444;
+}
+
+.lottery-breakdown > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.lottery-breakdown > summary::-webkit-details-marker {
+  display: none;
+}
+
+.lottery-breakdown > summary span:first-child {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.lottery-breakdown > summary b {
+  color: #f7f1e4;
+}
+
+.lottery-breakdown > summary small,
+.powerball-grid small {
+  color: #999;
+  font-size: 0.72rem;
+}
+
+.lottery-breakdown .expand-label {
+  color: #d5a84d;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.lottery-breakdown[open] .expand-label {
+  font-size: 0;
+}
+
+.lottery-breakdown[open] .expand-label::after {
+  content: "Hide results";
+  font-size: 0.7rem;
+}
+
+.lottery-breakdown-body {
+  padding: 0 1.25rem 1.25rem;
+}
+
+.powerball-grid .lottery-winner {
+  background: #d5a84d;
+  color: #111315;
+}
+
+.powerball-grid .lottery-winner span,
+.powerball-grid .lottery-winner small {
+  color: #111315;
+}
+
+.powerball-grid small {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.lottery-download {
+  display: inline-flex;
+  margin-top: 1.25rem;
+  background: #b7371c;
+  color: #fff;
+}
+
+@media (max-width: 760px) {
+  .final-draft-order {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .final-draft-order {
+    grid-template-columns: 1fr;
+  }
+
+  .final-draft-order article {
+    min-height: 68px;
+  }
+
+  .lottery-breakdown > summary {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .lottery-download {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}
