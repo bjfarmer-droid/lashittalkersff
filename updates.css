@@ -358,6 +358,17 @@
   border: 1px solid var(--ink);
 }
 
+.current-keeper-details {
+  margin-bottom: 1.5rem;
+}
+
+.current-keeper-details .current-keeper-table-wrap {
+  margin-bottom: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
+}
+
 .current-keeper-table .no-keeper-row td {
   background: #e2ded2;
   color: #5f5a50;
@@ -416,6 +427,24 @@
 
 .date-grid article.date-complete > p:not(.label) {
   color: #ccc7bb;
+}
+
+.date-grid article.date-today {
+  background: var(--orange);
+}
+
+.date-grid article.date-today .card-number,
+.date-grid article.date-today .label {
+  color: var(--ink);
+}
+
+.calendar-today {
+  align-self: flex-start;
+  margin-top: 0.8rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
 }
 
 .date-grid article > p:not(.label) {

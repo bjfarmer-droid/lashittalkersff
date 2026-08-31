@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="updates.css?v=56">
+  <link rel="stylesheet" href="updates.css?v=58">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -83,7 +83,7 @@
       <div class="date-grid">
         <article class="date-complete"><span class="card-number">01</span><p class="label">Keepers locked</p><h3>Friday, Aug. 21</h3><p>11 keepers confirmed and entered in Yahoo.</p><span class="calendar-complete">✓ Complete</span></article>
         <article class="date-complete"><span class="card-number">02</span><p class="label">Draft order set</p><h3>Monday, Aug. 24</h3><p>Winning Red Powerball: 2. The official draft order is posted below.</p><span class="calendar-complete">✓ Complete</span></article>
-        <article><span class="card-number">03</span><p class="label">Official draft &amp; party</p><h3>Monday, Aug. 31</h3><p>Draft Party begins at 6:00 p.m. PT. The official online draft begins promptly at 7:00 p.m.</p><a class="calendar-link" href="#draft-party">Party details ↓</a></article>
+        <article class="date-today"><span class="card-number">03</span><p class="label">Official draft &amp; party</p><h3>Monday, Aug. 31</h3><p>Draft Party begins at 6:00 p.m. PT. The official online draft begins promptly at 7:00 p.m.</p><span class="calendar-today">● Tonight</span><a class="calendar-link" href="#draft-party">Party details ↓</a></article>
         <article><span class="card-number">04</span><p class="label">First game</p><h3>Wednesday, Sept. 9</h3><p>The 2026 fantasy season begins.</p></article>
         <article><span class="card-number">05</span><p class="label">Trade deadline</p><h3>Saturday, Nov. 28</h3><p>Applies to player trades and future draft-pick trades.</p></article>
         <article><span class="card-number">06</span><p class="label">Fantasy playoffs begin</p><h3>Thursday, Dec. 17</h3><p>The league postseason begins with NFL Week 15.</p></article>
@@ -92,7 +92,7 @@
       <aside class="commissioner-desk">
         <div><p class="eyebrow">Commissioner’s Desk</p><h3>What’s Next</h3></div>
         <ol>
-          <li><span>01</span><p><b>Respond to the Draft Party Poll</b>Let the Commish know in the league chat if you’ll be attending.</p></li>
+          <li><span>01</span><p><b>Confirm Yahoo Access</b>Sign in before the draft and make sure your device is ready.</p></li>
           <li><span>02</span><p><b>Be Ready for the Draft</b>Draft Party at 6:00 p.m. PT. Online draft at 7:00 p.m. PT.</p></li>
           <li><span>03</span><p><b>Set Your Week 1 Lineup</b>Make sure each player is set before their game begins.</p></li>
         </ol>
@@ -173,11 +173,9 @@
         <div><p class="eyebrow">Protect your guys</p><h2>2026 Keepers</h2></div>
         <p>Keeper selections are locked and sorted by round cost. The round cost is the 2026 draft pick each team gives up to retain that player.</p>
       </div>
-      <div class="current-keepers">
-        <div><p class="eyebrow">Current season</p><h3>Confirmed 2026 Keepers</h3></div>
-        <div class="keeper-lock-status"><span>Current status</span><b>Locked &amp; Entered in Yahoo</b><p>11 keepers confirmed. Murder City will enter the draft without a keeper.</p></div>
-      </div>
-      <div class="table-wrap keeper-table-wrap current-keeper-table-wrap" role="region" aria-label="Confirmed 2026 keepers" tabindex="0">
+      <details class="keeper-history current-keeper-details">
+        <summary><span><b>2026 Keeper Details</b><small>11 keepers confirmed · Murder City has no keeper</small></span><span class="expand-label">View details</span></summary>
+        <div class="table-wrap keeper-table-wrap current-keeper-table-wrap" role="region" aria-label="Confirmed 2026 keepers" tabindex="0">
         <table class="keeper-table current-keeper-table"><thead><tr><th>Team</th><th>2026 keeper</th><th>2026 cost</th><th>Keeper status</th></tr></thead>
         <tbody>
           <tr><td>Ditka in a Box</td><td>A.J. Brown</td><td>Round 2</td><td>Eligible in 2027</td></tr>
@@ -193,7 +191,8 @@
           <tr><td>Mr. Ass</td><td>Luther Burden III</td><td>Round 13</td><td>Eligible in 2027</td></tr>
           <tr class="no-keeper-row"><td>Murder City</td><td>No keeper</td><td>—</td><td>All picks retained</td></tr>
         </tbody></table>
-      </div>
+        </div>
+      </details>
       <details class="keeper-history">
         <summary><span><b>2025 Keeper History</b><small>12 keepers recorded</small></span><span class="expand-label">View history</span></summary>
         <div class="table-wrap keeper-table-wrap" role="region" aria-label="2025 keeper history" tabindex="0">
@@ -429,6 +428,6 @@
     <div><p>Built for the league.</p><p class="muted">Last updated: August 31, 2026</p></div>
     <a href="#top">Back to top ↑</a>
   </footer>
-  <script src="script.js?v=56"></script>
+  <script src="script.js?v=58"></script>
 </body>
 </html>
