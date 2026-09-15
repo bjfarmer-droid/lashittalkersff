@@ -29,6 +29,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="updates.css?v=59">
+  <style>
+    .weekly-recap{background:var(--white)}
+    .weekly-recap .section-heading{margin-bottom:2rem}
+    .weekly-highlights{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid var(--ink);margin-bottom:2rem}
+    .weekly-highlights article{padding:1.5rem;overflow-wrap:anywhere}
+    .weekly-highlights article+article{border-left:1px solid var(--ink)}
+    .weekly-highlights article:first-child{background:var(--acid)}
+    .weekly-highlights h3{font-size:1.3rem;margin:.7rem 0}
+    .weekly-highlights p:last-child{font-size:.9rem;line-height:1.6;margin-bottom:0}
+    .weekly-results{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+    .weekly-matchup{border:1px solid var(--line);padding:1.25rem}
+    .weekly-team{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:1rem;align-items:baseline;padding:.5rem 0}
+    .weekly-team span{overflow-wrap:anywhere}
+    .weekly-team b{font-variant-numeric:tabular-nums;white-space:nowrap}
+    .weekly-winner{font-weight:700}
+    .weekly-recap-note{font-size:.8rem;color:#555;margin:1rem 0 0;line-height:1.6}
+    @media(max-width:700px){.weekly-highlights,.weekly-results{grid-template-columns:1fr}.weekly-highlights article+article{border-left:0;border-top:1px solid var(--ink)}}
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -52,7 +70,7 @@
     <section class="hero" id="top">
       <div class="hero-copy">
         <p class="eyebrow">Est. 2020 · Los Angeles</p>
-        <a class="hero-update" href="#season"><span>Latest league update · September 11</span><strong>Week 1 In Progress</strong><small>The 2026 season is underway · Set your lineup ↓</small></a>
+        <a class="hero-update" href="#week-1-recap"><span>Latest league update · September 15</span><strong>Week 1 Is in the Books</strong><small>The Reacharounds set the pace · The Jets pay the price ↓</small></a>
         <h1>Talk loud.<br><em>Draft smart.</em></h1>
         <p class="hero-intro">The official home of LA Shit Talkers Fantasy Football. One league, one trophy, and a whole lot of luck.</p>
         <div class="hero-actions">
@@ -64,15 +82,37 @@
         <img class="hero-crest" src="la-shit-talkers-primary-crest.png" alt="LA Shit Talkers Fantasy Football League crest">
         <div class="hero-card" aria-label="2026 season status">
           <div class="scoreboard-top"><span>2026</span><span>Season headquarters</span></div>
-          <div class="scoreboard-main"><strong>WEEK 1</strong><span>In progress</span></div>
-          <p>Set each player before game time</p>
+          <div class="scoreboard-main"><strong>WEEK 2</strong><span>Up next</span></div>
+          <p>Work the waiver wire · Set your lineup</p>
         </div>
       </div>
     </section>
 
     <div class="ticker" aria-hidden="true">
-      <div class="ticker-track"><span class="ticker-sequence">WEEK 1 IN PROGRESS &nbsp;•&nbsp; SET YOUR LINEUP &nbsp;•&nbsp; THE 2026 SEASON IS UNDERWAY &nbsp;•&nbsp; LET THE SHIT TALKING BEGIN &nbsp;•&nbsp;</span><span class="ticker-sequence">WEEK 1 IN PROGRESS &nbsp;•&nbsp; SET YOUR LINEUP &nbsp;•&nbsp; THE 2026 SEASON IS UNDERWAY &nbsp;•&nbsp; LET THE SHIT TALKING BEGIN &nbsp;•&nbsp;</span></div>
+      <div class="ticker-track"><span class="ticker-sequence">WEEK 1 IS IN THE BOOKS &nbsp;•&nbsp; THE REACHAROUNDS LEAD THE WAY &nbsp;•&nbsp; WEEK 2 UP NEXT &nbsp;•&nbsp; SET YOUR LINEUP &nbsp;•&nbsp;</span><span class="ticker-sequence">WEEK 1 IS IN THE BOOKS &nbsp;•&nbsp; THE REACHAROUNDS LEAD THE WAY &nbsp;•&nbsp; WEEK 2 UP NEXT &nbsp;•&nbsp; SET YOUR LINEUP &nbsp;•&nbsp;</span></div>
     </div>
+
+    <section class="section weekly-recap" id="week-1-recap" aria-labelledby="week-1-heading">
+      <div class="section-heading">
+        <p class="eyebrow">Final results · September 15, 2026</p>
+        <h2 id="week-1-heading">Week 1 Recap</h2>
+        <p>Six teams are undefeated. Six teams would like to speak to the schedule maker.</p>
+      </div>
+      <div class="weekly-highlights">
+        <article><p class="label">High score · 147.10 points</p><h3>The Reacharounds</h3><p>The week’s top score beats The Jets, 147.10–141.20. The Jets posted the second-highest score in the league and still took an L. Welcome back to fantasy football.</p></article>
+        <article><p class="label">Closest game · 3.40 points</p><h3>Ditka survives Simon</h3><p>Ditka in a Box edges Original champ Simon, 140.36–136.96. All that scoring, and Simon’s reward is an 0–1 start.</p></article>
+        <article><p class="label">Biggest blowout · 70.36 points</p><h3>Mr. Ass gets handed his</h3><p>Martin’s TeamFuckedUrMom69420 wins 129.02–58.66. Mr. Ass could have doubled his score and still lost.</p></article>
+      </div>
+      <div class="weekly-results" aria-label="All six Week 1 final matchups">
+        <article class="weekly-matchup" aria-label="Bill Brasky defeats Banner 18"><div class="weekly-team weekly-winner"><span>Bill Brasky · W</span><b>81.56</b></div><div class="weekly-team"><span>Banner 18</span><b>69.84</b></div></article>
+        <article class="weekly-matchup" aria-label="Shady Hungarians defeat Bye Week"><div class="weekly-team"><span>Bye Week</span><b>77.20</b></div><div class="weekly-team weekly-winner"><span>Shady Hungarians · W</span><b>87.36</b></div></article>
+        <article class="weekly-matchup" aria-label="Ditka in a Box defeats Original champ Simon"><div class="weekly-team weekly-winner"><span>Ditka in a Box · W</span><b>140.36</b></div><div class="weekly-team"><span>Original champ Simon</span><b>136.96</b></div></article>
+        <article class="weekly-matchup" aria-label="Murder City defeats Injury Prone"><div class="weekly-team"><span>Injury Prone</span><b>95.92</b></div><div class="weekly-team weekly-winner"><span>Murder City · W</span><b>120.26</b></div></article>
+        <article class="weekly-matchup" aria-label="The Reacharounds defeat The Jets"><div class="weekly-team"><span>The Jets</span><b>141.20</b></div><div class="weekly-team weekly-winner"><span>The Reacharounds · W</span><b>147.10</b></div></article>
+        <article class="weekly-matchup" aria-label="Martin's TeamFuckedUrMom69420 defeats Mr. Ass"><div class="weekly-team weekly-winner"><span>Martin's TeamFuckedUrMom69420 · W</span><b>129.02</b></div><div class="weekly-team"><span>Mr. Ass</span><b>58.66</b></div></article>
+      </div>
+      <p class="weekly-recap-note">Yahoo final scores as shown September 15, 2026. Winners marked W. All six winners start 1–0; all six losing teams start 0–1.</p>
+    </section>
 
     <section class="section season" id="season">
       <div class="section-heading">
@@ -89,8 +129,8 @@
       <aside class="commissioner-desk">
         <div><p class="eyebrow">Commissioner’s Desk</p><h3>What’s Next</h3></div>
         <ol>
-          <li><span>01</span><p><b>Set Your Lineup</b>Make sure each player is set before their game begins.</p></li>
-          <li><span>02</span><p><b>Talk Your Shit</b>The season is here. Let the league hear about it.</p></li>
+          <li><span>01</span><p><b>Set Your Week 2 Lineup</b>Make sure each player is set before their game begins.</p></li>
+          <li><span>02</span><p><b>Work the Waiver Wire</b>Review your roster and put in your claims for Week 2.</p></li>
           <li><span>03</span><p><b>Watch the Trade Board</b>Confirmed trades will be posted throughout the season.</p></li>
         </ol>
       </aside>
@@ -414,7 +454,7 @@
 
   <footer>
     <div class="footer-brand">LA SHIT<br>TALKERS <em>FF</em></div>
-    <div><p>Built for the league.</p><p class="muted">Last updated: September 11, 2026</p></div>
+    <div><p>Built for the league.</p><p class="muted">Last updated: September 15, 2026</p></div>
     <a href="#top">Back to top ↑</a>
   </footer>
   <script src="script.js?v=58"></script>
