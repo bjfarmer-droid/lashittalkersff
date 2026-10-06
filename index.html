@@ -170,49 +170,75 @@
       #trades .keeper-table caption{font-size:.8rem}
     }
   
-    /* v75: section identities; historical recaps retain their quiet palette. */
-    #week-5-watch{background:#232729;color:#fff8e9;border-top:5px solid #cfaa60}
-    #week-5-watch>.section-heading h2{color:#fff8e9}
-    #week-5-watch>.section-heading .eyebrow{color:#e2bd76}
-    #week-5-watch>.section-heading>p:not(.eyebrow){color:#ddd8cc}
-    #week-5-watch .watch-perfect{background:#303639;border:1px solid #666256;border-top:5px solid #cfaa60}
-    #week-5-watch .watch-perfect h3{color:#fff8e9}
-    #week-5-watch .watch-panic{background:#f7f0e3;border:1px solid #d2c2a5;border-top:5px solid #cfaa60;color:#242a2d}
-    #week-5-watch .watch-panic h3{color:#242a2d}
-    #week-5-watch .watch-panic .watch-panel-top{color:#72521f}
-    #week-4-recap{background:#faf6ed;border-top:5px solid #345e7b}
-    #week-4-recap>.section-heading h2,#week-4-recap>.section-heading .eyebrow{color:#294e68}
-    #week-4-recap>.weekly-highlights{border-color:#b4c4cd}
-    #week-4-recap>.weekly-highlights>article{background:#fffdf8;border-color:#b4c4cd}
-    #week-4-recap>.weekly-highlights>article:first-child{background:#24465e;color:#fffdf5;border-top-color:#739db8}
-    #week-4-recap>.weekly-highlights>article:first-child .label{color:#d6e9f4}
-    #week-4-recap>.weekly-highlights>article:not(:first-child) .label{color:#345e7b}
-    #week-4-recap>.weekly-highlights .highlight-logo{width:132px;height:132px}
-    #week-4-recap>.weekly-results>.weekly-matchup{border-color:#acbeca;background:#edf1f3}
-    #week-4-recap>.weekly-results .matchup-heading{background:#294e68;color:#fffdf8}
-    #week-4-recap>.weekly-results .matchup-tag{color:#d8eaf6}
-    #week-4-recap>.weekly-results .weekly-winner{background:#fffdf8}
-    #week-4-recap>.weekly-results .weekly-loser{background:#edf1f3;color:#505c64}
-    #week-4-recap>.weekly-results .weekly-winner .result-badge{background:#345e7b;border-color:#345e7b;color:#fff}
-    #week-4-recap>.weekly-results .matchup-margin{background:#e2eaf0;color:#40586a;border-color:#b9cad5}
-    #week-4-recap>.weekly-results .matchup-margin strong{color:#294e68}
-    #week-4-recap>.weekly-results .weekly-team{grid-template-columns:112px minmax(0,1fr) auto}
-    #week-4-recap>.weekly-results .team-logo{width:112px;height:112px}
-    #season{background:#fffdf9}
-    #season .date-grid article{background:#fff;border:1px solid #d8d0c5;box-shadow:inset 0 4px 0 #b64d2b}
-    #season .date-grid .card-number{display:inline-flex;align-items:center;justify-content:center;min-width:2.8rem;min-height:2.8rem;padding:.3rem .6rem;background:#a64224;color:#fff8ef;line-height:1}
-    #season .date-grid .label{color:#963c22}
-    #season .date-grid h3{color:#292b2b}
-    #season .calendar-schedule{color:#963c22}
-    @media(max-width:1050px) and (min-width:701px){
-      #week-4-recap>.weekly-results .weekly-team{grid-template-columns:76px minmax(0,1fr) auto;gap:.65rem}
-      #week-4-recap>.weekly-results .team-logo{width:76px;height:76px}
-    }
-    @media(max-width:420px){
-      #week-4-recap>.weekly-results .weekly-team{grid-template-columns:68px minmax(0,1fr) auto;gap:.5rem}
-      #week-4-recap>.weekly-results .team-logo{width:68px;height:68px}
-      #week-4-recap>.weekly-highlights .highlight-logo{width:112px;height:112px}
-    }
+    /* v76: unified charcoal, cream and burnt orange; explicit table contrast. */
+    #trades .keeper-table tbody th{color:#292622;background:#fffdf8;text-transform:none;letter-spacing:normal;font-size:.9rem}
+    #trades .keeper-table thead th{background:#292622;color:#fffdf8}
+    #trades .keeper-table tbody td:nth-child(2){background:#f5eadc;color:#873d25;font-weight:700}
+    #week-5-watch{background:#292622;color:#fffdf5;border-top:4px solid #ad492b}
+    #week-5-watch>.section-heading h2{color:#fffdf5}
+    #week-5-watch>.section-heading .eyebrow{color:#e6b79c}
+    #week-5-watch>.section-heading>p:not(.eyebrow){color:#e2dbcf}
+    #week-5-watch .watch-perfect{background:#35312c;border:1px solid #6a5f53;border-top:4px solid #ad492b}
+    #week-5-watch .watch-perfect h3{color:#fffdf5}
+    #week-5-watch .watch-perfect .watch-panel-top{color:#e6b79c}
+    #week-5-watch .watch-panic{background:#f7f1e6;color:#292622;border-top:4px solid #ad492b}
+    #week-5-watch .watch-panic h3{color:#292622}
+    #week-5-watch .watch-panic .watch-panel-top{color:#943c23}
+    #week-4-recap{background:#f7f1e6}
+    #week-4-recap>.section-heading h2{color:#292622}
+    #week-4-recap>.section-heading .eyebrow{color:#943c23}
+    #week-4-recap>.weekly-highlights>article:first-child{background:#292622;border-top-color:#ad492b;color:#fffdf5}
+    #week-4-recap>.weekly-highlights>article:first-child .label{color:#e6b79c}
+    #week-4-recap>.weekly-highlights .highlight-logo{width:128px;height:128px}
+    #week-4-recap>.weekly-results .matchup-heading{background:#292622;color:#fffdf5}
+    #week-4-recap>.weekly-results .matchup-tag{color:#e6b79c}
+    #week-4-recap>.weekly-results .weekly-winner .result-badge{background:#292622;border-color:#292622;color:#fffdf5}
+    #season{background:#fffdf8}
+    #season .date-grid article{background:#fffdf8;box-shadow:inset 0 3px 0 #ad492b}
+    #season .date-grid .card-number,#season .date-grid .label,#season .calendar-schedule{color:#943c23}
+    @media(max-width:600px){#trades .keeper-table tbody th{font-size:.8rem}}
+
+    /* v77: neutral seasonal sections; retain original hero and ticker. */
+    #week-5-watch{background:#262626;color:#fffdf8;border-top:1px solid #484848}
+    #week-5-watch>.section-heading h2{color:#fffdf8}
+    #week-5-watch>.section-heading .eyebrow,#week-5-watch>.section-heading>p:not(.eyebrow){color:#dedbd5}
+    #week-5-watch .watch-panel{background:#fffdf8;color:#292929;border:1px solid #d4d1cb;border-top:1px solid #d4d1cb}
+    #week-5-watch .watch-panel h3,#week-5-watch .watch-panel .watch-panel-top,#week-5-watch .watch-team span{color:#292929}
+    #week-5-watch .watch-panel .watch-comment{color:#555;border-color:#d4d1cb}
+    #week-5-watch .watch-team img{filter:none}
+    #week-5-watch .watch-team img.team-logo-light{filter:drop-shadow(0 0 1px #292929) drop-shadow(0 0 1px #292929)}
+    #week-4-recap{background:#fffdf8;border-top:1px solid #d4d1cb}
+    #week-4-recap .section-heading h2,#week-4-recap .section-heading .eyebrow{color:#292929}
+    #week-4-recap .weekly-highlights{border-color:#d4d1cb}
+    #week-4-recap .weekly-highlights article{background:#fffdf8;color:#292929;border-color:#d4d1cb}
+    #week-4-recap .weekly-highlights article:first-child{background:#262626;color:#fffdf8;border-top:4px solid #777}
+    #week-4-recap .weekly-highlights article:first-child h3{color:#fffdf8}
+    #week-4-recap .weekly-highlights article:first-child .label{color:#dedbd5}
+    #week-4-recap .weekly-highlights article:not(:first-child) .label{color:#555}
+    #week-4-recap .weekly-matchup{background:#f0efec;border-color:#d4d1cb}
+    #week-4-recap .matchup-heading{background:#292929;color:#fffdf8}
+    #week-4-recap .matchup-tag{color:#dedbd5}
+    #week-4-recap .weekly-winner{background:#fffdf8;color:#292929}
+    #week-4-recap .weekly-loser{background:#f0efec;color:#555}
+    #week-4-recap .weekly-winner .result-badge{background:#292929;border-color:#292929;color:#fffdf8}
+    #week-4-recap .weekly-loser .result-badge{background:#e5e4e0;border-color:#c9c7c2;color:#555}
+    #week-4-recap .matchup-margin{background:#f0efec;color:#555;border-color:#d4d1cb}
+    #week-4-recap .matchup-margin strong{color:#292929}
+    #season{background:#fffdf8}
+    #season .date-grid article{background:#fffdf8;border:1px solid #d4d1cb;box-shadow:inset 0 3px 0 #292929}
+    #season .date-grid .card-number,#season .date-grid .label,#season .calendar-schedule{color:#292929}
+    #trades{background:#f0efec;border-top:1px solid #d4d1cb}
+    #trades .section-heading h2,#trades .section-heading .eyebrow{color:#292929}
+    #trades .trade-ledger-note{background:#e7e6e2;color:#444;border:1px solid #d4d1cb}
+    #trades .trade-ledger-note span{color:#444}
+    #trades .keeper-table caption{color:#555}
+    #trades .keeper-table thead th{background:#292929;color:#fffdf8}
+    #trades .keeper-table tbody th,#trades .keeper-table tbody td{background:#fffdf8;color:#292929;border-color:#d4d1cb}
+    #trades .keeper-table tbody tr:nth-child(even) th,#trades .keeper-table tbody tr:nth-child(even) td{background:#e9e8e5}
+    #trades .keeper-table tbody th{color:#292929;border-left:1px solid #d4d1cb;text-transform:none;letter-spacing:normal}
+    #trades .keeper-table tbody td:nth-child(2){color:#292929;font-weight:700}
+    #trades .keeper-table tbody td:last-child{color:#595959;font-weight:400;border-color:#d4d1cb}
+    #trades .standings-note{color:#595959}
 </style>
 </head>
 <body>
