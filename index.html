@@ -149,7 +149,71 @@
     @media(max-width:760px){.watch-panels{grid-template-columns:1fr}.watch-team img{height:100px}.watch-panel h3{font-size:2.2rem}}
     @media(max-width:380px){.watch-team img{height:78px}.watch-team span{font-size:.7rem}.watch-teams{gap:.5rem}}
     #week-5-watch .watch-teams{grid-template-columns:repeat(2,minmax(0,1fr))}
-  </style>
+  
+    /* v74: scoped trade-ledger palette and clearer exchange columns. */
+    #trades{background:#faf3e7;border-top:5px solid #ad492b}
+    #trades .section-heading h2,#trades .section-heading .eyebrow{color:#943c23}
+    #trades .trade-ledger-note{background:#f0e2d2;border:1px solid #d9bda8;color:#39332e}
+    #trades .trade-ledger-note span{color:#943c23}
+    #trades .table-wrap{background:transparent;border:0;overflow-x:auto}
+    #trades .keeper-table{width:100%;border-collapse:separate;border-spacing:0 10px;background:transparent;color:#302b27}
+    #trades .keeper-table caption{text-align:left;color:#6a4a39;font-weight:700;padding:12px 0}
+    #trades .keeper-table thead th{background:#713821;color:#fff8ef;padding:14px 18px;border:0;text-align:left}
+    #trades .keeper-table tbody th,#trades .keeper-table tbody td{background:#fffdf8;padding:20px 18px;border-top:1px solid #d8beaa;border-bottom:1px solid #d8beaa;text-align:left;vertical-align:top;line-height:1.5}
+    #trades .keeper-table tbody th{border-left:4px solid #ad492b;width:34%;font-weight:700;overflow-wrap:anywhere}
+    #trades .keeper-table tbody td:nth-child(2){background:#f8e7d7;color:#85371f;font-weight:750}
+    #trades .keeper-table tbody td:last-child{border-right:1px solid #d8beaa;color:#68605a;font-weight:400}
+    #trades .standings-note{color:#68605a}
+    @media(max-width:600px){
+      #trades .keeper-table thead th{padding:10px 8px;font-size:.75rem}
+      #trades .keeper-table tbody th,#trades .keeper-table tbody td{padding:14px 8px;font-size:.8rem;overflow-wrap:anywhere}
+      #trades .keeper-table caption{font-size:.8rem}
+    }
+  
+    /* v75: section identities; historical recaps retain their quiet palette. */
+    #week-5-watch{background:#232729;color:#fff8e9;border-top:5px solid #cfaa60}
+    #week-5-watch>.section-heading h2{color:#fff8e9}
+    #week-5-watch>.section-heading .eyebrow{color:#e2bd76}
+    #week-5-watch>.section-heading>p:not(.eyebrow){color:#ddd8cc}
+    #week-5-watch .watch-perfect{background:#303639;border:1px solid #666256;border-top:5px solid #cfaa60}
+    #week-5-watch .watch-perfect h3{color:#fff8e9}
+    #week-5-watch .watch-panic{background:#f7f0e3;border:1px solid #d2c2a5;border-top:5px solid #cfaa60;color:#242a2d}
+    #week-5-watch .watch-panic h3{color:#242a2d}
+    #week-5-watch .watch-panic .watch-panel-top{color:#72521f}
+    #week-4-recap{background:#faf6ed;border-top:5px solid #345e7b}
+    #week-4-recap>.section-heading h2,#week-4-recap>.section-heading .eyebrow{color:#294e68}
+    #week-4-recap>.weekly-highlights{border-color:#b4c4cd}
+    #week-4-recap>.weekly-highlights>article{background:#fffdf8;border-color:#b4c4cd}
+    #week-4-recap>.weekly-highlights>article:first-child{background:#24465e;color:#fffdf5;border-top-color:#739db8}
+    #week-4-recap>.weekly-highlights>article:first-child .label{color:#d6e9f4}
+    #week-4-recap>.weekly-highlights>article:not(:first-child) .label{color:#345e7b}
+    #week-4-recap>.weekly-highlights .highlight-logo{width:132px;height:132px}
+    #week-4-recap>.weekly-results>.weekly-matchup{border-color:#acbeca;background:#edf1f3}
+    #week-4-recap>.weekly-results .matchup-heading{background:#294e68;color:#fffdf8}
+    #week-4-recap>.weekly-results .matchup-tag{color:#d8eaf6}
+    #week-4-recap>.weekly-results .weekly-winner{background:#fffdf8}
+    #week-4-recap>.weekly-results .weekly-loser{background:#edf1f3;color:#505c64}
+    #week-4-recap>.weekly-results .weekly-winner .result-badge{background:#345e7b;border-color:#345e7b;color:#fff}
+    #week-4-recap>.weekly-results .matchup-margin{background:#e2eaf0;color:#40586a;border-color:#b9cad5}
+    #week-4-recap>.weekly-results .matchup-margin strong{color:#294e68}
+    #week-4-recap>.weekly-results .weekly-team{grid-template-columns:112px minmax(0,1fr) auto}
+    #week-4-recap>.weekly-results .team-logo{width:112px;height:112px}
+    #season{background:#fffdf9}
+    #season .date-grid article{background:#fff;border:1px solid #d8d0c5;box-shadow:inset 0 4px 0 #b64d2b}
+    #season .date-grid .card-number{display:inline-flex;align-items:center;justify-content:center;min-width:2.8rem;min-height:2.8rem;padding:.3rem .6rem;background:#a64224;color:#fff8ef;line-height:1}
+    #season .date-grid .label{color:#963c22}
+    #season .date-grid h3{color:#292b2b}
+    #season .calendar-schedule{color:#963c22}
+    @media(max-width:1050px) and (min-width:701px){
+      #week-4-recap>.weekly-results .weekly-team{grid-template-columns:76px minmax(0,1fr) auto;gap:.65rem}
+      #week-4-recap>.weekly-results .team-logo{width:76px;height:76px}
+    }
+    @media(max-width:420px){
+      #week-4-recap>.weekly-results .weekly-team{grid-template-columns:68px minmax(0,1fr) auto;gap:.5rem}
+      #week-4-recap>.weekly-results .team-logo{width:68px;height:68px}
+      #week-4-recap>.weekly-highlights .highlight-logo{width:112px;height:112px}
+    }
+</style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
